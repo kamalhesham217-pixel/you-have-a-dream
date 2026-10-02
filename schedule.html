@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#f3f6f2">
+	<title>الجدول الأسبوعي | الثانوية العامة ٢٠٢٧</title>
+	<link rel="stylesheet" href="../assets/css/styles.css">
+	<script src="../assets/js/subjects.js" defer></script>
+	<script src="../assets/js/storage.js" defer></script>
+	<script src="../assets/js/exams.js" defer></script>
+	<script src="../assets/js/progress.js" defer></script>
+	<script src="../assets/js/schedule.js" defer></script>
+</head>
+<body class="schedule-page">
+	<main class="schedule-container">
+		<header class="schedule-header">
+			<div>
+				<p class="eyebrow">دفعة ٢٠٢٧ <span aria-hidden="true">/</span> مساحات الدراسة</p>
+				<h1>الجدول الأسبوعي</h1>
+				<p class="schedule-subtitle">خطتك الدراسية، يومًا بعد يوم</p>
+			</div>
+			<a class="schedule-back" href="../index.html">
+				<span aria-hidden="true">←</span>
+				<span>لوحة الاستعداد</span>
+			</a>
+		</header>
+
+		<section class="today-study" aria-labelledby="today-study-heading">
+			<header class="today-study-header">
+				<div>
+					<p class="eyebrow">تنفيذ خطة اليوم</p>
+					<h2 id="today-study-heading">مذاكرة اليوم</h2>
+				</div>
+				<p class="today-study-date" id="today-study-date"></p>
+			</header>
+
+			<div class="today-study-summary" aria-label="تقدم جلسات اليوم">
+				<div><span>الجلسات المسندة</span><strong id="today-assigned-count">٠</strong></div>
+				<div><span>الجلسات المكتملة</span><strong id="today-completed-count">٠</strong></div>
+				<div><span>نسبة الإنجاز</span><strong id="today-completion-percent">٠٪</strong></div>
+			</div>
+			<div class="today-outcome-summary" aria-label="نتائج جلسات اليوم">
+				<h3>نتائج جلسات اليوم</h3>
+				<div class="today-outcome-values">
+					<div><span>مكتملة</span><strong id="today-outcome-completed">٠</strong></div>
+					<div><span>جزئية</span><strong id="today-outcome-partial">٠</strong></div>
+					<div><span>غير مكتملة</span><strong id="today-outcome-not-completed">٠</strong></div>
+					<div><span>بلا نتيجة</span><strong id="today-outcome-none">٠</strong></div>
+				</div>
+			</div>
+
+			<div class="today-sessions" id="today-sessions"></div>
+		</section>
+
+		<section class="schedule-overview" aria-label="ملخص المذاكرة الأسبوعية">
+			<div class="weekly-summary">
+				<div class="weekly-summary-heading">
+					<div>
+						<p class="weekly-summary-kicker">حصص هذا الأسبوع</p>
+						<h2>إنجاز الجدول</h2>
+					</div>
+					<strong class="weekly-completion-percent" id="weekly-completion-percent">٠٪</strong>
+				</div>
+				<div class="weekly-summary-count" aria-label="الجلسات المكتملة من الجلسات المسندة">
+					<strong id="weekly-completed-count">٠</strong>
+					<span aria-hidden="true">/</span>
+					<span id="weekly-assigned-count">٠</span>
+				</div>
+				<div class="weekly-progress-track" role="progressbar" aria-label="نسبة إكمال الجلسات المسندة" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+					<span class="weekly-progress-fill"></span>
+				</div>
+				<p class="weekly-summary-caption">جلسات مكتملة من إجمالي الحصص المسندة</p>
+				<div class="weekly-outcome-summary" aria-label="نتائج جلسات الأسبوع">
+					<h3>نتائج الجلسات هذا الأسبوع</h3>
+					<div class="weekly-outcome-values">
+						<div><span>مكتملة</span><strong id="weekly-outcome-completed">٠</strong></div>
+						<div><span>جزئية</span><strong id="weekly-outcome-partial">٠</strong></div>
+						<div><span>غير مكتملة</span><strong id="weekly-outcome-not-completed">٠</strong></div>
+						<div><span>بلا نتيجة</span><strong id="weekly-outcome-none">٠</strong></div>
+					</div>
+				</div>
+			</div>
+
+			<section class="subject-breakdown" aria-labelledby="subject-breakdown-heading">
+				<h2 id="subject-breakdown-heading">ملخص المواد</h2>
+				<div class="subject-breakdown-grid" id="subject-breakdown"></div>
+			</section>
+		</section>
+
+		<div class="schedule-grid" id="schedule-grid" aria-label="جدول أيام الأسبوع"></div>
+
+		<footer class="schedule-footer">الثانوية العامة المصرية <b aria-hidden="true">·</b> ٢٠٢٧</footer>
+	</main>
+</body>
+</html>
